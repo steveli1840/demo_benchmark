@@ -8,4 +8,6 @@ int main()
   test_npd();
   test_uaf();
   test_uiv();
+  foo();
+  memmodel_clang1();
 }

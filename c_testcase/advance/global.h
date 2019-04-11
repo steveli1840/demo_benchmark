@@ -19,5 +19,6 @@ extern void test_msf();
 extern void test_npd();
 extern void test_uaf();
 extern void test_uiv();
+extern int foo();
 
 #endif /* global_h_included */
