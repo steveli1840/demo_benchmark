@@ -22,7 +22,7 @@ VPATH = $(CASE_SRC)/$(PKG_NAME)
 .PHONY: all compile_case compile_rule clean test_scan
 
 all: $(TARGET)
-	cd output; tar zcvf ../../java.tar.gz .
+	cd output; tar zcvf ../../java.tar.gz jarfiles/*.jar
 
 scan:
 	cd $(OUTPUT); \
