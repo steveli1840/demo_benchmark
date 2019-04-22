@@ -11,8 +11,9 @@ RULE_PKG = io/xc5
 
 CASE.JAR = case.jar
 RULE.JAR = rule.jar
+RULE.O = rule.o
 
-TARGET = $(CASE.JAR) $(RULE.JAR)
+TARGET = $(CASE.JAR) $(RULE.O)
 
 JAR    = jar
 JAVAC  = javac
@@ -21,20 +22,25 @@ VPATH = $(CASE_SRC)/$(PKG_NAME)
 
 .PHONY: all compile_case compile_rule clean test_scan
 
-all: $(TARGET)
-	cd output; tar zcvf ../../java.tar.gz jarfiles/*.jar
+all: 
+	cd output; tar zcvf ../preprocess.tar.gz jarfiles/case.jar jarfiles/rule.o
 
 scan:
 	cd $(OUTPUT); \
-	xvsa -xfa -c -Wf,-RBC=true $(RULE.JAR) -noinline; \
-	xvsa -xfa -c $(CASE.JAR); \
-	xvsa -xfa -json case.o rule.o
+	xvsa -xfa -json $(CASE.JAR) rule.o
+#	xvsa -xfa -c $(CASE.JAR); \
+#	xvsa -xfa -json case.o rule.o
 
 $(CASE.JAR): compile_case
 	cd $(CASE_OBJ) && $(JAR) -cvf ../$(OUTPUT)/$@ $(PKG_NAME)/*
 
 $(RULE.JAR): compile_rule
 	cd $(RULE_OBJ) && $(JAR) -cvf ../$(OUTPUT)/$@ $(PKG_NAME)/* 
+
+$(RULE.O): 
+	cd $(OUTPUT); \
+	xvsa -xfa -c -Wf,-noSootOutput=true,-RBC=true $(RULE.JAR) -noinline
+         
 
 compile_case:
 	@-mkdir -p $(CASE_OBJ)
