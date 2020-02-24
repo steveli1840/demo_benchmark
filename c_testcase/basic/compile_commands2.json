@@ -1,0 +1,62 @@
+{
+    "1": [
+        "ar", 
+        "crv", 
+        "basic.a", 
+        "uiv.o", 
+        "npd.o", 
+        "aob.o", 
+        "msf.o", 
+        "dbf.o", 
+        "uaf.o", 
+        "CwD_/data0/docker_volume/source/demo_benchmark/c_testcase/basic"
+    ], 
+    "0": [
+        "as", 
+        "--64", 
+        "-o", 
+        "dbf.o", 
+        "/tmp/cc01K0e0.s", 
+        "CwD_/data0/docker_volume/source/demo_benchmark/c_testcase/basic"
+    ], 
+    "3": [
+        "as", 
+        "--64", 
+        "-o", 
+        "aob.o", 
+        "/tmp/ccvzyZG2.s", 
+        "CwD_/data0/docker_volume/source/demo_benchmark/c_testcase/basic"
+    ], 
+    "2": [
+        "as", 
+        "--64", 
+        "-o", 
+        "uiv.o", 
+        "/tmp/cc4BV7p1.s", 
+        "CwD_/data0/docker_volume/source/demo_benchmark/c_testcase/basic"
+    ], 
+    "5": [
+        "as", 
+        "--64", 
+        "-o", 
+        "npd.o", 
+        "/tmp/cciguUR0.s", 
+        "CwD_/data0/docker_volume/source/demo_benchmark/c_testcase/basic"
+    ], 
+    "4": [
+        "as", 
+        "--64", 
+        "-o", 
+        "msf.o", 
+        "/tmp/ccmkXF4X.s", 
+        "CwD_/data0/docker_volume/source/demo_benchmark/c_testcase/basic"
+    ], 
+    "6": [
+        "as", 
+        "--64", 
+        "-o", 
+        "uaf.o", 
+        "/tmp/ccTKufR2.s", 
+        "CwD_/data0/docker_volume/source/demo_benchmark/c_testcase/basic"
+    ]
+}

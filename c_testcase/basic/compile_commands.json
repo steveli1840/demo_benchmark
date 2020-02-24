@@ -1,0 +1,82 @@
+[
+    {
+        "file": "dbf.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "dbf.o",
+            "dbf.c"
+        ],
+        "directory": "/source/demo_benchmark/c_testcase/basic"
+    },
+    {
+        "file": "uaf.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "uaf.o",
+            "uaf.c"
+        ],
+        "directory": "/source/demo_benchmark/c_testcase/basic"
+    },
+    {
+        "file": "msf.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "msf.o",
+            "msf.c"
+        ],
+        "directory": "/source/demo_benchmark/c_testcase/basic"
+    },
+    {
+        "file": "aob.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "aob.o",
+            "aob.c"
+        ],
+        "directory": "/source/demo_benchmark/c_testcase/basic"
+    },
+    {
+        "file": "npd.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "npd.o",
+            "npd.c"
+        ],
+        "directory": "/source/demo_benchmark/c_testcase/basic"
+    },
+    {
+        "file": "uiv.c",
+        "arguments": [
+            "cc",
+            "-c",
+            "-o",
+            "uiv.o",
+            "uiv.c"
+        ],
+        "directory": "/source/demo_benchmark/c_testcase/basic"
+    },
+    {
+        "arguments": [
+            "ar",
+            "crv",
+            "basic.a",
+            "uiv.o",
+            "npd.o",
+            "aob.o",
+            "msf.o",
+            "dbf.o",
+            "uaf.o"
+        ],
+        "directory": "/source/demo_benchmark/c_testcase/basic"
+    }
+]

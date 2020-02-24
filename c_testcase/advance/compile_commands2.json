@@ -1,0 +1,151 @@
+{
+    "11": [
+        "as", 
+        "--64", 
+        "-o", 
+        "uaf.o", 
+        "/tmp/ccGKiwrk.s"
+    ], 
+    "10": [
+        "as", 
+        "--64", 
+        "-o", 
+        "npd.o", 
+        "/tmp/ccW69CGa.s"
+    ], 
+    "13": [
+        "as", 
+        "--64", 
+        "-o", 
+        "wp_eg_npd_ctx.o", 
+        "/tmp/cc7IgOps.s"
+    ], 
+    "12": [
+        "as", 
+        "--64", 
+        "-o", 
+        "aob.o", 
+        "/tmp/ccB6cUdd.s"
+    ], 
+    "1": [
+        "as", 
+        "--64", 
+        "-o", 
+        "main.o", 
+        "/tmp/cckZSWbm.s"
+    ], 
+    "0": [
+        "as", 
+        "--64", 
+        "-o", 
+        "global.o", 
+        "/tmp/ccxjbxAp.s"
+    ], 
+    "3": [
+        "as", 
+        "--64", 
+        "-o", 
+        "xplatform_32_64.o", 
+        "/tmp/ccQhVZ7w.s"
+    ], 
+    "2": [
+        "as", 
+        "--64", 
+        "-o", 
+        "asm_uiv_npd.o", 
+        "/tmp/ccOxnlVo.s"
+    ], 
+    "5": [
+        "as", 
+        "--64", 
+        "-o", 
+        "wp_eg_obj_sensitive.o", 
+        "/tmp/ccZgRgxt.s"
+    ], 
+    "4": [
+        "as", 
+        "--64", 
+        "-o", 
+        "wp_eg_npd.o", 
+        "/tmp/ccK4WfJu.s"
+    ], 
+    "7": [
+        "/usr/bin/ld", 
+        "-plugin", 
+        "/usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so", 
+        "-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper", 
+        "-plugin-opt=-fresolution=/tmp/ccL1erxw.res", 
+        "-plugin-opt=-pass-through=-lgcc", 
+        "-plugin-opt=-pass-through=-lgcc_s", 
+        "-plugin-opt=-pass-through=-lc", 
+        "-plugin-opt=-pass-through=-lgcc", 
+        "-plugin-opt=-pass-through=-lgcc_s", 
+        "--sysroot=/", 
+        "--build-id", 
+        "--eh-frame-hdr", 
+        "-m", 
+        "elf_x86_64", 
+        "--hash-style=gnu", 
+        "-dynamic-linker", 
+        "/lib64/ld-linux-x86-64.so.2", 
+        "-pie", 
+        "-o", 
+        "program", 
+        "/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o", 
+        "/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o", 
+        "/usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o", 
+        "-L/usr/lib/gcc/x86_64-linux-gnu/6", 
+        "-L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu", 
+        "-L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib", 
+        "-L/lib/x86_64-linux-gnu", 
+        "-L/lib/../lib", 
+        "-L/usr/lib/x86_64-linux-gnu", 
+        "-L/usr/lib/../lib", 
+        "-L/usr/lib/gcc/x86_64-linux-gnu/6/../../..", 
+        "uiv.o", 
+        "npd.o", 
+        "aob.o", 
+        "msf.o", 
+        "dbf.o", 
+        "uaf.o", 
+        "main.o", 
+        "global.o", 
+        "asm_uiv_npd.o", 
+        "wp_eg_npd_ctx.o", 
+        "wp_eg_npd.o", 
+        "wp_eg_obj_sensitive.o", 
+        "xplatform_32_64.o", 
+        "-lgcc", 
+        "--as-needed", 
+        "-lgcc_s", 
+        "--no-as-needed", 
+        "-lc", 
+        "-lgcc", 
+        "--as-needed", 
+        "-lgcc_s", 
+        "--no-as-needed", 
+        "/usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o", 
+        "/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o"
+    ], 
+    "6": [
+        "as", 
+        "--64", 
+        "-o", 
+        "uiv.o", 
+        "/tmp/ccd1Gff8.s"
+    ], 
+    "9": [
+        "as", 
+        "--64", 
+        "-o", 
+        "msf.o", 
+        "/tmp/ccmACbFf.s"
+    ], 
+    "8": [
+        "as", 
+        "--64", 
+        "-o", 
+        "dbf.o", 
+        "/tmp/ccjP8lBh.s"
+    ]
+}
